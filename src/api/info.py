@@ -1,8 +1,10 @@
 from fastapi import APIRouter
 
+#робимо екземляр класу та додаємо тег для зручності
 router = APIRouter(tags=["Info"])
 
-@router.get("/info1")
+#вказуєм ендпоінт в декораторі, та ретюрним інфу у функції
+@router.get("/info")
 def info_print():
     return {"Author": "Yurchyshyn Dmytro", 
-            "ProgramDeskriprtion":"Simple FastApi example"}
+            "ProgramDescription":"Simple FastApi example"}
