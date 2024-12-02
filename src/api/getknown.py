@@ -15,15 +15,9 @@ def getting():
 
 
         for cve in content["vulnerabilities"]:         
-            for j in range(0, len(content["vulnerabilities"])):
-                
-                startdate = str(datetime.now()-timedelta(days=j))
-                startdate = startdate.split(" ")
-                startdate = startdate[0]
-                #порівняння ключа cve
-                if cve["knownRansomwareCampaignUse"] == "Known":
-                    output.append(cve)
-                    #обмеження по довжині
-                    if len(output) == 10:
-                        return output
+            if cve["knownRansomwareCampaignUse"] == "Known":
+                output.append(cve)
+                #обмеження по довжині
+                if len(output) == 10:
+                    return output
             
