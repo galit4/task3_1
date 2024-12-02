@@ -1,5 +1,6 @@
 There are two /get/all endpoints. /get/all shows all cve for last 5 days in records. /get/allv2 shows results for last 5 days in life(current date - 5 days)
-More detailed description is in the code comments
+More detailed description is in the code comments.
+
 info:
 ![image](https://github.com/user-attachments/assets/dede8da9-ed2a-4355-98e9-9b2d895994e0)
 get all:
